@@ -2,6 +2,7 @@
 
 set -e
 
+sudo rm -rf roles/lib 2>/dev/null
 ansible-galaxy install -r roles/requirements.yml --roles-path roles --force
 
 sudo \

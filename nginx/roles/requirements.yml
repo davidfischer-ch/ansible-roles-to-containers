@@ -4,10 +4,6 @@
   src: https://github.com/davidfischer-ch/ansible-roles
   version: master  # Please never in production :)
 
-- name: build
-  src: https://github.com/davidfischer-ch/ansible-role-build
-  version: master  # Please never in production :)
-
 - name: daemon
   src: https://github.com/davidfischer-ch/ansible-role-daemon
   version: master  # Please never in production :)
@@ -16,14 +12,28 @@
   src: https://github.com/davidfischer-ch/ansible-role-local-source
   version: master  # Please never in production :)
 
-- name: logrotate
-  src: https://github.com/davidfischer-ch/ansible-role-logrotate
-  version: master  # Please never in production :)
-
 - name: nginx
   src: https://github.com/davidfischer-ch/ansible-role-nginx
   version: master  # Please never in production :)
 
-- name: ufw
-  src: https://github.com/davidfischer-ch/ansible-role-ufw
-  version: master  # Please never in production :)
+# These roles are not used ...
+
+# - name: github
+#   src: https://github.com/davidfischer-ch/ansible-role-github
+#   version: master  # Please never in production :)
+
+# - name: logrotate
+#   src: https://github.com/davidfischer-ch/ansible-role-logrotate
+#   version: master  # Please never in production :)
+
+# - name: python
+#   src: https://github.com/davidfischer-ch/ansible-role-python
+#   version: master  # Please never in production :)
+
+# - name: supervisor
+#   src: https://github.com/davidfischer-ch/ansible-role-supervisor
+#   version: master  # Please never in production :)
+
+# - name: ufw
+#   src: https://github.com/davidfischer-ch/ansible-role-ufw
+#   version: master  # Please never in production :)
