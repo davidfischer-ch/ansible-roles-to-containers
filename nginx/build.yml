@@ -1,4 +1,11 @@
 # Inspired by https://github.com/nginxinc/docker-nginx/blob/master/stable/buster/Dockerfile
+
+# TODO Cleanup even further stuff
+# TODO Further reduce number of deb-src?
+# TODO Do we really need two ports exposed?
+# TODO Find strategies to setup sites (at runtime? or build then extract? or volume?)
+# TODO Document how to use it (I have to use it first) :)
+
 ---
 
 - name: Containerized version of Nginx

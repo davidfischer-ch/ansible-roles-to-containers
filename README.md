@@ -33,7 +33,7 @@ Build the Nginx container image:
 $ cd nginx
 nginx$ nano roles/requirements.yml  # You may wanna pin versions
 nginx$ nano build.yml               # Update configuration as you wish
-nginx$ sh build.sh -e nginx_version=release-1.15.6  # Change it as you wish :)
+nginx$ sh build.sh
 ```
 
 ## Containers
@@ -51,14 +51,6 @@ Build your own Nginx containers fitting your use cases!
 Nginx from source with all awesome options of the [nginx role](https://github.com/davidfischer-ch/ansible-role-nginx) available.
 
 Status: POC
-
-#### TODO
-
-- Cleanup even further stuff
-- Further reduce number of deb-src?
-- Do we really need two ports exposed?
-- Find strategies to setup sites (at runtime? or build then extract? or volume?)
-- Document how to use it (I have to use it first) :)
 
 ## Remark
 
