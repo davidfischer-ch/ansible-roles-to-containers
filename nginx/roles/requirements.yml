@@ -8,10 +8,22 @@
   src: https://github.com/davidfischer-ch/ansible-role-build
   version: master  # Please never in production :)
 
+- name: daemon
+  src: https://github.com/davidfischer-ch/ansible-role-daemon
+  version: master  # Please never in production :)
+
 - name: local-source
   src: https://github.com/davidfischer-ch/ansible-role-local-source
   version: master  # Please never in production :)
 
+- name: logrotate
+  src: https://github.com/davidfischer-ch/ansible-role-logrotate
+  version: master  # Please never in production :)
+
 - name: nginx
   src: https://github.com/davidfischer-ch/ansible-role-nginx
+  version: master  # Please never in production :)
+
+- name: ufw
+  src: https://github.com/davidfischer-ch/ansible-role-ufw
   version: master  # Please never in production :)
