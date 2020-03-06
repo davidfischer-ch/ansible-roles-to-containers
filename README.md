@@ -41,7 +41,7 @@ nginx$ sh build.sh -e nginx_version=release-1.15.6  # Change it as you wish :)
 The scripts are running ansible-bender and buildah as root.
 
 Its a quick & dirty hack to prevent buildah to use vfs instead of fuse-overlayfs as a fallback.
-And I was facing the issue that that issue, and this quick hack to prevent it came to my mind.
+And I was unfortunately facing this issue.
 
 NB: My home directory is encrypted with eCryptfs...
 
