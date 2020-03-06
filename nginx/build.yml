@@ -40,19 +40,22 @@
         update_cache: yes
       when: _apt_sources is change
 
-    - include_role:
+    - import_role:
         name: nginx
-      loop:
-        - setup
-        - cleanup
       vars:
-        nginx_role_action: '{{ item }}'
+        nginx_role_action: setup
+
+    - import_role:
+        name: nginx
+      vars:
+        nginx_role_action: cleanup
 
     - name: Cleanup stuff
-      raw: >
-        apt-get -y -qq remove --purge python3 python3-apt python3-pip python3-setuptools &&
-        apt-get -y -qq autoremove &&
-        apt-get -y -qq autoclean
+      raw: '{{ item }}'
+      loop:
+        - apt-get -y -qq remove --purge python3 python3-apt python3-pip python3-setuptools
+        - apt-get -y -qq autoremove
+        - apt-get -y -qq autoclean
 
   vars:
     do_become: no
