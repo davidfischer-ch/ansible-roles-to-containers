@@ -7,13 +7,13 @@ The official images are cookie cutter containers, sometimes you need more flexib
 This library is aimed by the goal of providing you with the framework to build your own containers,
 powered by all the awesomeness of the [ansible-roles](https://github.com/davidfischer-ch/ansible-roles).
 
-My primary goal was to containerize my personal projects that are already fully automated with Ansible, without reinventing the wheel with low-level, inexpressive language such as bash.
+My primary goal was to containerize my personal projects that are already fully automated with [Ansible](https://github.com/ansible/ansible), without reinventing the wheel with low-level, inexpressive language such as bash.
 
 ## Quickstart
 
-Tested on Linux Mint 19.3.
+Tested on [Linux Mint 19.3](https://linuxmint.com/).
 
-Install ansible-bender, buildah and fuse-overlayfs on your machine:
+Install [ansible-bender](https://github.com/ansible-community/ansible-bender), [buildah](https://github.com/containers/buildah) and [fuse-overlayfs](https://github.com/containers/fuse-overlayfs) on your machine:
 
 ```
 $ cd bootstrap
