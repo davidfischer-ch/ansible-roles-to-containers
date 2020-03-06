@@ -11,3 +11,5 @@ ANSIBLE_LIBRARY=roles/lib/library:/usr/share/ansible/plugins/modules \
 ANSIBLE_ROLES_PATH=roles \
 ANSIBLE_STDOUT_CALLBACK=debug \
 ansible-bender build build.yml "$@"
+
+sudo buildah images
