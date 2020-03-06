@@ -36,7 +36,31 @@ nginx$ nano build.yml               # Update configuration as you wish
 nginx$ sh build.sh -e nginx_version=release-1.15.6  # Change it as you wish :)
 ```
 
-### Remark
+## Containers
+
+### Build
+
+The base image required by the other containers.
+
+Status: POC
+
+### Nginx
+
+Build your own Nginx containers fitting your use cases!
+
+Nginx from source with all awesome options of the [nginx role](https://github.com/davidfischer-ch/ansible-role-nginx) available.
+
+Status: POC
+
+#### TODO
+
+- Cleanup even further stuff
+- Further reduce number of deb-src?
+- Do we really need two ports exposed?
+- Find strategies to setup sites (at runtime? or build then extract? or volume?)
+- Document how to use it (I have to use it first) :)
+
+## Remark
 
 The scripts are running ansible-bender and buildah as root.
 
@@ -94,29 +118,5 @@ $ sudo buildah info
     }
 }
 ```
-
-## Containers
-
-### Build
-
-The base image required by the other containers.
-
-Status: POC
-
-### Nginx
-
-Build your own Nginx containers fitting your use cases!
-
-Nginx from source with all awesome options of the [nginx role](https://github.com/davidfischer-ch/ansible-role-nginx) available.
-
-Status: POC
-
-#### TODO
-
-- Cleanup even further stuff
-- Further reduce number of deb-src?
-- Do we really need two ports exposed?
-- Find strategies to setup sites (at runtime? or build then extract? or volume?)
-- Document how to use it (I have to use it first) :)
 
 2014-2020 - David Fischer
