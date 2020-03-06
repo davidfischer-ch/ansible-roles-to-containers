@@ -11,6 +11,7 @@ Install ansible-bender, buildah and fuse-overlayfs on your machine:
 ```
 $ cd bootstrap
 bootstrap$ pip3 install ansible-bender  # Install Ansible Bender
+bootstrap$ nano roles/requirements.yml  # You may wanna pin versions
 bootstrap$ sh bootstrap.sh -e fuse_overlayfs_version=v0.7.7  # Change it as you wish :)
 ```
 
@@ -23,8 +24,9 @@ base$ sh build.sh
 Build the Nginx container image:
 ```
 $ cd nginx
-nginx$ nano build.yml  # Update configuration as you wish
-nginx$ sh build.sh
+nginx$ nano roles/requirements.yml  # You may wanna pin versions
+nginx$ nano build.yml               # Update configuration as you wish
+nginx$ sh build.sh -e nginx_version=release-1.15.6  # Change it as you wish :)
 ```
 
 ### Remark

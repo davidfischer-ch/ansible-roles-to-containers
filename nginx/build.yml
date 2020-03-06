@@ -5,6 +5,10 @@
   hosts: all
 
   tasks:
+    - assert:
+        that:
+          - nginx_version is defined
+
     - name: Configure packages sources
       lineinfile:
         path: /etc/apt/sources.list
@@ -52,9 +56,6 @@
     nginx_log_rotations: []  # Do not manage log rotation
     nginx_sites: {}          # Do not configure sites
     nginx_ufw_rules: []      # Do not install UFW
-
-    # FIXME as a parameter
-    nginx_version: release-1.15.6
 
     ansible_bender:
 
