@@ -1,6 +1,13 @@
 # Ansible Library ... Containerized
 
-This library is covering multiple use-cases:
+Give you the power to build tailor-made container images fitting your use cases.
+
+The official images are cookie cutter containers, sometimes you need more flexibility.
+
+This library is aimed by the goal of providing you with the framework to build your own containers,
+powered by all the awesomeness of the [ansible-roles](https://github.com/davidfischer-ch/ansible-roles).
+
+My primary goal was to containerize my personal projects that are already fully automated with Ansible, without reinventing the wheel with low-level, inexpressive language such as bash.
 
 ## Quickstart
 
