@@ -1,0 +1,21 @@
+---
+
+- name: lib
+  src: https://github.com/davidfischer-ch/ansible-roles
+  version: master  # Please never in production :)
+
+- name: buildah
+  src: https://github.com/davidfischer-ch/ansible-role-buildah
+  version: master  # Please never in production :)
+
+- name: fuse-overlayfs
+  src: https://github.com/davidfischer-ch/ansible-role-fuse-overlayfs
+  version: master  # Please never in production :)
+
+- name: github
+  src: https://github.com/davidfischer-ch/ansible-role-github
+  version: master  # Please never in production :)
+
+- name: local-source
+  src: https://github.com/davidfischer-ch/ansible-role-local-source
+  version: master  # Please never in production :)

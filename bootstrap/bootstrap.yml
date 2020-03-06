@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  pre_tasks:
+    - assert:
+        that:
+          - fuse_overlayfs_version is defined
+  roles:
+    - buildah
+    - fuse-overlayfs
+  vars:
+    fuse_overlayfs_build_mode: container

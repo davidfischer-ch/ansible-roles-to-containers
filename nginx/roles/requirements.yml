@@ -1,0 +1,17 @@
+---
+
+- name: lib
+  src: https://github.com/davidfischer-ch/ansible-roles
+  version: master  # Please never in production :)
+
+- name: build
+  src: https://github.com/davidfischer-ch/ansible-role-build
+  version: master  # Please never in production :)
+
+- name: local-source
+  src: https://github.com/davidfischer-ch/ansible-role-local-source
+  version: master  # Please never in production :)
+
+- name: nginx
+  src: https://github.com/davidfischer-ch/ansible-role-nginx
+  version: master  # Please never in production :)
