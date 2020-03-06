@@ -57,6 +57,8 @@
     nginx_sites: {}          # Do not configure sites
     nginx_ufw_rules: []      # Do not install UFW
 
+    nginx_version: release-1.15.6
+
     ansible_bender:
 
       ansible_extra_args: --diff
