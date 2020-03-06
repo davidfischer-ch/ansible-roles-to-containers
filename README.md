@@ -45,7 +45,7 @@ And I was unfortunately facing this issue.
 
 NB: My home directory is encrypted with eCryptfs...
 
-Contributions to avoid this issue are welcome!
+Better ideas are welcome!
 
 Check with:
 
